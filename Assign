@@ -1,0 +1,25 @@
+// You are using C#
+using System;
+class Program{
+    
+static void Main(string[] args){
+    
+    // C# unary oprater
+   
+    int a=10;
+    a+=5;
+    Console.WriteLine($"a+= 5 : = {a}");
+     a-=5;
+    Console.WriteLine($"a-= 5 : = {a}");
+     a*=5;
+    Console.WriteLine($"a*= 5 : = {a}");
+      a/=5;
+    Console.WriteLine($"a/= 5 : = {a}");
+     a%=5;
+    Console.WriteLine($"a%= 5 : = {a}");
+   
+   
+}
+
+
+}
