@@ -1,0 +1,36 @@
+//Unary Operator
+// You are using C#
+using System;
+class Program{
+    
+static void Main(string[] args){
+    
+    // C# unary oprater
+    int a,b;
+    a=10;
+    b=++a;
+    Console.WriteLine($"prefix ++,a = {a},b={b}");    
+}
+}
+
+//arithmetic operator
+
+// You are using C#
+using System;
+class Program{
+    
+static void Main(string[] args){
+    
+    // C# unary oprater
+   
+    int a=10,b=3;
+    Console.WriteLine($"a+b={a*b} ");
+     Console.WriteLine($"a+b={a+b} ");
+      Console.WriteLine($"a+b={a-b} ");
+       Console.WriteLine($"a+b={a/b} "); 
+        Console.WriteLine($"a+b={a%b} ");
+    
+    
+    
+}
+}
