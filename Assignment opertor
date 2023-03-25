@@ -1,0 +1,21 @@
+// You are using C#
+using System;
+class Program{
+    
+static void Main(string[] args){
+    
+    // C# unary oprater
+   
+    int a=10,b=3;
+    Console.WriteLine($"a*b={a*b} ");
+     Console.WriteLine($"a+b={a+b} ");
+      Console.WriteLine($"a-b={a-b} ");
+       Console.WriteLine($"a/b={a/b} "); 
+        Console.WriteLine($"a%b={a%b} ");
+    
+    float f=11.5f;
+      Console.WriteLine($"f/b = {f/b} ");
+   Console.WriteLine($"f%b = {f%b} ");
+  
+}
+}
