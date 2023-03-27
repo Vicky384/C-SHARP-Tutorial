@@ -1,0 +1,32 @@
+using System;
+class Vicky{
+    
+    public static void Main(string[]args){
+        
+        // You are using C#
+
+      //  Write a program to get favourite subject from user
+      // and print the subject name with console;
+      char ch;
+      Console.WriteLine("Enter your favourite  subject option:");
+      ch=Convert.ToChar(Console.ReadLine());
+      
+      switch(ch){
+          case 'e':
+          {
+              Console.WriteLine("its english dude");
+              break;
+          }
+          case 'm':
+          {
+              Console.WriteLine("Its maths mister");
+              break;
+          }
+          default:{
+          Console.WriteLine("OHho no bro! please reasisghn");
+          break;
+          }
+      }
+        
+    }
+}
