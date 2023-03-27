@@ -1,0 +1,24 @@
+// You are using C#
+using System;
+class Program{
+    public static void Main(string[] args){
+      //  Write a program to get favourite subject from user
+      // and print the subject name with console;
+      char ch;
+      Console.WriteLine("Enter your favourite  subject option:");
+      ch=Convert.ToChar(Console.ReadLine());
+      if(ch=='e'){
+          Console.WriteLine("Your favoruite subjec tis english");
+          
+      }
+      else if(ch=='m'){
+          Console.WriteLine("its maths");
+      }
+      else{
+          Console.WriteLine("sorry bro");
+      }
+        
+    }
+    
+    
+}
