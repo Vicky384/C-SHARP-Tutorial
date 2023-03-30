@@ -1,0 +1,56 @@
+// You are using C#
+//Creating Multiple objects of a clas
+using System;
+namespace ClassObject
+{
+    class Employee
+    {
+        string department;
+        static void Main(string [] args){
+            // creating employee object 
+            Employee obj = new Employee();
+            //set depart ment for obj
+            obj.department="Technical";
+            Console.WriteLine($"You are from a {obj.department} background");
+            // creating second object
+            Employee obj1= new Employee();
+            // set for department for obj1
+            obj1.department="Marketing ";
+            Console.WriteLine($"You are from a {obj1.department} baclground bro");
+            //creating.Read();
+            
+        }
+    }
+}
+// You are using C#
+// Creating objects in difrent class
+using System;
+namespace classOBject
+{
+    class Employee
+    {
+        public string name;
+        public void work(string work)
+        {
+            Console.WriteLine($"Your work is :{work}");
+        }
+    }
+    
+        class Employedrive
+        {
+            static void Main(string[] args){
+                // creating object for classs employee
+                Employee e=new Employee();
+                 Console.WriteLine("Employes one");
+                 // set name for Employes
+                 e.name="MR.Vikcy";
+                 Console.WriteLine("Name:" + e.name);
+                 //getting method
+                 e.work("Coding bro");
+                // Console.WriteLine(e.work);
+                 Console.ReadLine();
+                 
+            }
+        
+    }
+}
