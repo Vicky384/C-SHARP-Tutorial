@@ -1,0 +1,44 @@
+// You are using C#
+using System;
+class Student {
+    int rollno;
+    string name;
+    int age;
+    int standard;
+    public void getStudent(int rollno,string name,int age,int standard){
+        this.rollno=rollno;
+        this.name=name;
+        this.age=age;
+        this.standard=standard;
+    }  
+    public void getStudent( ){
+        Console.WriteLine("your roll no is:{0}",this.rollno);
+        Console.WriteLine("your name  is:{0}",this.name);
+        Console.WriteLine("your  age is:{0}",this.age);
+        Console.WriteLine("your standard  is:{0}",this.standard);
+        
+    }
+    
+    
+    
+    
+    static void Main(string [] args){
+        /*Console.WriteLine("Enter your roll no :");
+        int roll=int.Parse(Console.ReadLine());
+        Console.WriteLine("Enter your name :");
+        string name= Console.ReadLine();
+        Console.WriteLine("Enter your Age");
+        int age=int.Parse(Console.ReadLine());
+        Console.WriteLine("Enter your standard:");
+        int standard=int.Parse(Console.ReadLine()); */
+        Student vicky=new Student();
+        vicky.getStudent(25,"Rmavatar yadav",24,1);
+        vicky.getStudent();
+        Console.WriteLine("-----------------------");
+        Student Rama=new Student();
+        Rama.getStudent(21,"ajar",23,13);
+        Rama.getStudent();
+        
+         
+    }
+}
