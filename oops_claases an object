@@ -1,0 +1,37 @@
+https://teams.microsoft.com/_#/broadcastPlaybackScreen
+// You are using C#
+using System;
+namespace classes_and_objects
+{
+    class Batsman
+    {
+        string firstname;
+        string lastname;
+        public  Batsman(string firstname,string lastname)
+        {
+            this.firstname=firstname;
+            this.lastname=lastname;
+        }
+        public void playedstraigtdrive()
+        {
+            Console.WriteLine("Straight forward has been played");
+        }
+        public void squareDrive()
+        {
+            Console.WriteLine("squareDrive has been played");
+        }
+        public void getdetails()
+        {
+            Console.WriteLine("Batsman is batting {0} {1}",this.firstname,this.lastname);
+        }
+    }
+    class Program
+    {
+        static void Main(string [] args){
+            Batsman virat= new Batsman("Virat","Kohli");
+            virat.getdetails();
+            virat.squareDrive();
+            //Console.Readline();
+        }
+    }
+}
