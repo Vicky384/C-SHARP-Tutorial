@@ -1,0 +1,33 @@
+// You are using C#
+// You are using C#
+// C# delegate
+using System;
+namespace DelegatesProject 
+{
+    // defining delegate
+    public delegate void AddDelegate(int x,int y);
+    public delegate string SayDelegate(string str);
+    class Program
+    {
+        public void AddNums( int a ,int b){
+            Console.WriteLine(a+b);
+        }
+        public static string SayHello(string name){
+            return " HEllo " + name;
+        }
+        static void Main(string  [] args){
+            Program p=new Program();
+            AddDelegate ad=new AddDelegate(p.AddNums);
+            ad(100,59);
+           // p.AddNums(150,20);
+           SayDelegate sd=new SayDelegate(SayHello);
+           string str=sd("Vicky");
+           
+           // string ste =SayHello("Vicku");
+            Console.WriteLine(str);
+            Console.ReadLine();
+        }
+        
+        
+    }
+}
