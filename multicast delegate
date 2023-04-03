@@ -1,0 +1,27 @@
+// area of perimeter using multicast
+// You are using C#
+// mutlicast delegate
+ using System;
+ namespace DelegateProject
+ {
+     public delegate void RectDelegate(double width,double height);
+     class Rectangle
+     {
+         public void GetArea(double width,double height){
+             Console.WriteLine("Area of rectangle : " + width*height);
+         }
+         public void Getperimeter( double width,double height){
+             Console.WriteLine("Perimeter of rectangle : " + 2*(width+height));
+         }
+         static void Main(string [] args){
+             Rectangle rect=new Rectangle();
+             //rect.GetArea(12.34,56.78);
+             //rect.Getperimeter(12.34,56.78);
+             RectDelegate rd=new RectDelegate(rect.GetArea);
+             rd +=rect.Getperimeter;
+             rd.Invoke(12.34,56.78);
+             Console.ReadLine();
+         }    
+         
+     }
+ }
