@@ -1,0 +1,41 @@
+using System;
+namespace DeConstructorD
+{
+    public class Employee
+    {
+        int _Eno;
+        string _Ename,_job;
+        double _Salary;
+        public Employee(int Eno,string Ename, string job, double Salary)
+        {
+            _Eno=Eno;
+            _Ename= Ename;
+            _job= job;
+            _Salary=Salary;
+        }
+        public void Deconstruct(out int Eno, out string Ename,out string job, out double Salary)
+        {
+            Eno = _Eno;
+            Ename = _Ename;
+            job = _job;
+            Salary = _Salary;
+        }
+        
+    }
+    class DeConstructorDemo
+    {
+    static void Main()
+        {
+            
+            Employee Emp= new Employee(1001,"Vicky","Software Eng",40000.00);
+            
+            (int Eno,string Name, string job, double Salary)= Emp;
+            Console.WriteLine($"Employee number is :{Eno}");
+            Console.WriteLine($"Employee's Name  is :{Name}");
+            Console.WriteLine($"Employee's Job is :{job}");
+            Console.WriteLine($"Employee's  Salary is :{Salary}");
+            
+            
+        }
+    }
+}
