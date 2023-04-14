@@ -1,0 +1,31 @@
+// You are using C#
+// You are using C#
+using System;
+namespace C_features
+{
+    internal class Program
+    {
+        public void Math1(int a,int b, ref int c,ref int d)
+        {
+            c = a + b;
+            d = a * b;
+        }
+
+        static void Main(string[] args)
+        {
+           Console.WriteLine("Enter the num1 to add:");
+           int m=Convert.ToInt32(Console.ReadLine());
+           Console.WriteLine("Enter the num2 to add:");
+           int n=Convert.ToInt32(Console.ReadLine());
+            Program p=new Program();
+             int s = 0, q = 0;
+            Console.WriteLine("Before adding and mulitplying");
+            Console.WriteLine(s + " " + q);
+            p.Math1(m,n,ref s,ref q);
+            Console.WriteLine("After adding and multilplying");
+            Console.WriteLine(s + " " + q);
+            Console.ReadLine();
+            
+        }
+    }
+}
