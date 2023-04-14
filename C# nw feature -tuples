@@ -1,0 +1,59 @@
+ using System;
+ 
+     class  Program
+     {
+         public (int, int ) Math(int a, int b)
+         {
+             
+             int c = a + b;
+             int d = a * b;
+             return (c,d);
+           // Tuple<int,int> t = new Tuple.Create(c,d);
+            //return t;
+         }
+         static void Main(string [] args)
+         {
+             
+             Program p = new Program();
+             var obj = p.Math(100,34);
+             
+             //Tuple<int,int> obj = p.Math(100,25);
+             Console.WriteLine($"Sum: {obj.Item1}");
+             Console.WriteLine($"Product: {obj.Item2}");
+             Console.ReadLine();
+             
+             
+         }
+     }
+ ---------------------------------------------------------------------
+  using System;
+ 
+     class  Program
+     {
+         public (int, int ) Math(int a, int b)
+         {
+             
+             int c = a + b;
+             int d = a * b;
+             return (c,d); 
+           // Tuple<int,int> t = new Tuple.Create(c,d);
+            //return t;
+         }
+         static void Main(string [] args)
+         {
+             
+             Program p = new Program();
+            // var obj = p.Math(100,34);
+            var (Sum,Product) = p.Math(55,66);
+             
+             //Tuple<int,int> obj = p.Math(100,25);
+             //Console.WriteLine($"Sum: {obj.Item1}");
+            // Console.WriteLine($"Product: {obj.Item2}");
+            Console.WriteLine($"SUM IS: {Sum}");
+            Console.WriteLine($"PRODUCT IS : {Product}");
+             Console.ReadLine();
+             
+             
+         }
+     }
+ 
